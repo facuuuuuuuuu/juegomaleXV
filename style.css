@@ -1,0 +1,137 @@
+/* From Uiverse.io by andrew-demchenk0 */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Mogra&display=swap');
+
+body{
+    margin: 0;
+    background-color: #b6f6ff;
+    color: #eee;
+    font-family: Poppins;
+    font-size: 12px;
+}
+ 
+/* From Uiverse.io by tako143 */ 
+.flower {
+ width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.petal {
+  position: absolute;
+  width: 65px;
+  height: 90px;
+  background: linear-gradient(180deg, #9c72a7, #fd68e4);
+  border-radius: 50%;
+}
+
+.petal1 {
+  transform: rotate(0deg) translateY(-50%);
+  animation-delay: 0.1s;
+}
+
+.petal2 {
+  transform: rotate(45deg) translateY(-50%);
+  animation-delay: 0.2s;
+}
+
+.petal3 {
+  transform: rotate(90deg) translateY(-50%);
+  animation-delay: 0.3s;
+}
+
+.petal4 {
+  transform: rotate(135deg) translateY(-50%);
+  animation-delay: 0.4s;
+}
+
+.petal5 {
+  transform: rotate(180deg) translateY(-50%);
+  animation-delay: 0.5s;
+}
+
+.petal6 {
+  transform: rotate(225deg) translateY(-50%);
+  animation-delay: 0.6s;
+}
+
+.petal7 {
+  transform: rotate(270deg) translateY(-50%);
+  animation-delay: 0.7s;
+}
+
+.petal8 {
+  transform: rotate(315deg) translateY(-50%);
+  animation-delay: 0.8s;
+}
+
+.center {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #f1d2d2;
+  border-radius: 50%;
+}
+
+.flower:hover .petal {
+  animation-name: changeColor;
+  animation-duration: 8s;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+}
+
+.flower:hover {
+  animation-name: rotateFlower;
+  animation-duration: 8s;
+  animation-iteration-count: infinit;
+  animation-timing-function: ease;
+}
+
+@keyframes changeColor {
+  0% {
+    background: linear-gradient(180deg, #fcdbdf, #ad68fd);
+  }
+  25% {
+    background: linear-gradient(180deg, #fcd2e3, #fa6094);
+  }
+  50% {
+    background: linear-gradient(180deg, #fabefc, #4e90c7);
+  }
+  75% {
+    background: linear-gradient(180deg, #f7d6d6, #fd6a6a);
+  }
+  100% {
+    background: linear-gradient(180deg, #fcd3fc, #f744d9);
+  }
+}
+
+@keyframes rotateFlower {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.5) rotate(360deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.contenido{
+    display: none;
+    text-align: center;
+    font-size: 500%;
+    color: #3d3d3d;
+    width: 100%;
+    height: 100%;
+  font-family: "Mogra";
+  font-weight: 400;
+  font-style: normal;
+
+
+    position: fixed;
+     justify-content: center; /* Centrar horizontal */
+    align-items: center;
+}
